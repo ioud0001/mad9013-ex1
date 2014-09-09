@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<title>Anna's Web Development Best Practices</title>
+</head>
+<body>
+<h1>The Moon</h1>
+<h2>A Natural Satellite</h2>
+<p>The Moon is the only natural satellite of the Earth, and the fifth largest satellite in the 
+Solar System. It is the largest natural satellite of a planet in the Solar System relative 
+to the size of its primary, having a quarter the diameter of Earth but only 1⁄81 its' 
+mass.</p>
+<figure>
+<img src="img/moon.jpg" alt="The moon" />
+<figcaption>The Moon as seen from Ottawa.</figcaption>
+</figure>
+<h3>Statistics</h3>
+<ul>
+  <li>Semi-major axis: 384,399 km</li>
+  <li>Orbital period: 27.321582 days</li>
+  <li>Average orbital speed: 1.022 km/s</li>
+  <li>Mean radius: 1,737.10 km</li>
+  <li>Surface area: 3.793 x 107 km<sup>2</sup></li>
+  <li>Volume: 2.1958 x 1010 km<sup>3</sup></li>
+  <li>Mass: 7.3477 x 1022 kg</li>
+</ul>
+<h4>Moon Landings</h4>
+<ol>
+<li><strong>Apollo 11</strong>
+<p>July 20, 1969</p>
+<p>Apollo 11 was an American spaceflight in which the astronauts Neil Armstrong 
+  and Buzz Aldrin became the first ever to land on the Moon on July 20, 1969, at <time>20:18 UTC</time>. Further, Neil Armstrong became the first to step onto the Moon 6 
+  hours after the landing on <time>21 July, 02:56 UTC</time>.
+</p>
+<p>Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">http://en.wikipedia.org/wiki/Apollo_11</a></p>
+</li>
+<li><strong>Apollo 12</strong>
+<p>November 19, 1969</p>
+<p>Apollo 12 was the sixth manned flight in the United States Apollo program and the second to land on the Moon (an H type mission). It was launched on November&nbsp;14, 1969 from the Kennedy Space Center, Florida, four months after 
+Apollo 11.</p>
+<p>Source: <a href="http://en.wikipedia.org/wiki/Apollo_12">http://en.wikipedia.org/wiki/Apollo_12</a></li>
+</ol>
+<!--<ul>
+<li>Meta tags</li>
+<li>Heading order best practices</li>
+<li>Tables vs. Divs</li>
+<li>Screen readers</li>
+<li>Obsolete tags</li>
+<li>Working with images</li>
+<li>Inline styles vs. Global styles</li>
+</ul>
+<h2>Meta tags</h2>
+<h2>Heading order best practices</h2>
+<p>Headings should follow this specific order:</p>
+<ol>
+<li>The main page heading is <strong>always</strong> H1.</li>
+<li>The page sub-heading and any other sub-headings should be H2</li>
+<li>If you have content that is specific to be inside an H2, then consider putting this heading into H3 tags.</li>
+</ol>
+<h2>Tables vs. Divs</h2>
+<p>The W3C passed a motion that data should be added into tables, and webpage layouts should be added inside div elements. And screen readers may prefer to have certain information inside tables. </p>
+<h2>Obsolete tags</h2>
+<p>The following tags are considered obsolete and modern browsers may not recognize them properly:</p>
+<ul>
+  <li>&lt;b&gt;</li>
+  <li>&lt;i&gt;</li>
+  <li>&lt;a name=&quot;&quot;&gt; is now changed to &lt;a id=&quot;&quot;&gt; and the id must be unique to the page. Having two of the same id's in a page is considered another W3C failure. </li>
+</ul>
+<h2>Working with images</h2>
+<p>Images require an alternative text. This is now a <strong>mandatory requirement</strong> for all images. If you prefer not to write anything in your alt, you can leave it empty: alt=&quot;&quot;. </p>
+<p>Here is an image. If you hover over it, you will see the image description -- which was added using the alt. </p>
+<p></p>
+<p>If you are dealing with very complex diagrams that are difficult to explain in just a simple sentence using alt, you should consider adding a link underneath the image to a long description explaining the graphic.</p>
+<p>As HTML has changed, you can consider writing your code the following way:</p>
+<figure>
+<img src="img/moon.jpg" alt="The moon" />
+<figcaption>Here is a beautiful image of the moon.</figcaption>
+</figure>
+<h2>Inline styles vs. Global styles</h2>
+<p>Imagine if for every single corporate branded website, the various pages associated to that corporation were styled very differently from the rest of the corporation's look and feel. Having said that, inline styles are considered illegal for Government of Canada's Treasury Board standards. They are only used when a certain style hasn't been added to the Web Experience Toolkit, or when developers do not have access to the global stylesheet. </p>
+<p>An example of an inline style can be found below:</p>
+<p>&lt;style type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>/* your style goes here */</p>
+<p>&lt;/style&gt;</p>
+<h2>What's important for screen readers</h2>
+<h3>Descriptive links</h3>
+<h3>Tables or divs?</h3>
+<p>A few years ago the World Wide Web Consortium (W3C) decided that tables can no longer be used for layout purposes, only for data. Tables offer a lot more information to a user than a div would, so in the case of layouts there is no need to have content inside a table that is only with a certain layout to look nice.</p>
+<h4>Complex tables and captions</h4>
+<p>Since not all visitors to your website can understand the layout of tables and the associations between table headers and their respective cells, screen readers are built to recognize these features. Below you will find some information on how this can be achieved successfully.</p>
+<ol>
+	<li>Create your table using the table tag</li>
+  <li>Add a &lt;caption&gt; explaining the information in your table. This can be used to add a title to your table. This information will be used by screen readers.</li>
+  <li>Add a &lt;thead&gt; and &lt;/thead&gt; where you would add your headers: &lt;head&gt;.</li>
+  <li>Add a &lt;tbody&gt; and &lt;/tbody&gt; and add your content using &lt;tr&gt; and &lt;td&gt;.</li>
+    <li>Use a tool like the following <a href="http://www.visionaustralia.org/digital-access-tabletoolbar">Vision Australia Toolbar for FireFox</a> to create associations between headers and table cells.</li>
+</ol>
+<h3>Images with a long description or alternative text</h3>
+<p>Images can be added using the following code: &lt;img src="your image file" />.</p>
+<p>After you add the src, adding the alt="<em>your image description</em>" is a mandatory requirement for screen readers. Not having this requirement is considered a failure of W3C standards<sup><a href="#ref1">1</a></sup>. If you are dealing with decorative images that have no purpose to the content (i.e. borders, banners, etc.) then your alt can simply say: alt="".</p>
+<p></p>
+
+<h2>References</h2>
+<p><sup id="ref1">1</sup> Use the alt attribute to describe the function of each visual: <a href="http://www.w3.org/QA/Tips/altAttribute">http://www.w3.org/QA/Tips/altAttribute</a>.</p>
+-->
+</body>
+</html>
